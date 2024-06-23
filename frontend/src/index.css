@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Noto Serif for headings, Poppins for default font, Playwright for dynamics */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+.ck.ck-content {
+    height: 12rem;
+    width: 100%;
+    overflow-y: auto;
+}
+
+@layer utilities {
+    .heading {
+        @apply font-noto
+    }
+    .squiggly-text {
+        @apply font-playwright
+    }
+    .headerGridImage {
+        @apply absolute bottom-0 left-28 w-20
+    }
+    .headerIllustration {
+        @apply absolute bottom-0 right-20 w-60
+    }
+    .headerIcons {
+        @apply text-white absolute
+    }
+    .section {
+        @apply max-w-[1300px] mx-auto py-6 px-1 mb-12
+    }
+    .section-gray {
+        @apply bg-gray-200 pt-4
+    }
+    .section-heading {
+        @apply text-sm text-blue-800 font-semibold
+    }
+    .section-title {
+        @apply text-5xl mt-2 font-semibold mb-6
+    }
+    .service-card {
+        @apply shadow rounded flex justify-center px-4 gap-2 bg-white border-none outline-none h-80 w-[25rem] items-start flex-col
+    }
+    .ctaBg {
+        background: url("/BgImgOne.png") no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+    }
+    .ctaBg2 {
+        background: url("/BgImgTwo.jpg") no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.7);
+        background-blend-mode: multiply;
+    }
+    .greenDiv {
+        @apply bg-green-400 w-64 h-64 rotate-45 absolute
+    }
+    .greenOne {
+        @apply -top-8 -left-40
+    }
+    .greenTwo {
+        @apply -bottom-20 -right-20
+    }
+    .footer {
+        @apply bg-secondaryBlue w-full
+    }
+    .footer-section {
+        @apply max-w-[1300px] mx-auto py-6 px-1 mb-4 mt-10
+    }
+    .footer-title {
+        @apply text-lg mb-6 text-primaryBlack
+    }
+    .footerImage {
+        @apply absolute
+    }
+}
