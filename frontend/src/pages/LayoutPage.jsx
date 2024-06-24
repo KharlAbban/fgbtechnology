@@ -6,7 +6,7 @@ const LayoutPage = () => {
   // const {pathname} = useLocation;
 
   return (
-    <div className='drawer'>
+    <div className='drawer w-full p-0 m-0'>
       <input type="checkbox" id="myDrawer" name='drawer-toggle' className='drawer-toggle' />
       <div className="drawer-content">
         <Navbar />
