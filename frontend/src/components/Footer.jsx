@@ -5,11 +5,11 @@ const Footer = () => {
   const {partOne, partTwo, partThree, footerBigImage, footerSmallImage} = footer;
 
   return (
-    <footer className="footer pt-12 relative">
+    <footer className="footer pt-12 max-lg:pt-6 relative">
       <img src={footerBigImage} alt="Footer Big Image" className="footerImage bottom-0 left-0" />
       <img src={footerSmallImage} alt="Footer Small Image" className="footerImage right-8 top-9" />
-      <section className="footer-section flex justify-between">
-        <div className="w-1/4 flex flex-col gap-8 justify-start">
+      <section className="footer-section flex justify-between max-lg:justify-around">
+        <div className="w-1/4 flex flex-col gap-8 justify-start max-md:hidden">
           <img src={partOne.logo} alt="FG&B" className="w-40" />
           <p className="text-sm text-gray-200 font-normal">{partOne.description}</p>
           <p className="flex gap-2 items-center">
@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-1/2 flex justify-around">
+        <div className="w-1/2 flex justify-around max-md:w-full max-md:gap-10 max-sm:flex-col">
           {partTwo.map(subPart => (
             <div key={subPart.title}>
               <h4 className="footer-title">{subPart.title}</h4>
@@ -29,7 +29,7 @@ const Footer = () => {
           ))}
         </div>
         
-        <div className="w-1/4">
+        <div className="w-1/4 max-lg:hidden">
           <h4 className="footer-title">{partThree.title}</h4>
           <div className="flex gap-8 items-center mb-8">
             <span className="grid place-items-center rounded-full p-3 bg-white hover:bg-primaryBlue duration-100 transition-all hover:text-white"><IoLogoFacebook size={18} /></span>

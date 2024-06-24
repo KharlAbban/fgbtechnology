@@ -1,12 +1,29 @@
+import { Link } from "react-router-dom"
+
 export const navbar = {
     "logoFullWhite": "/LogoFullWhite.png",
     "logoFullDark": "/LogoFullDark.png",
     "menuItems": [
-        "Home",
-        "Internet",
-        "Infrastructure",
-        "Consultations",
-        "About Us"
+        {
+            "text": "Home",
+            "linkTo": "/"
+        },
+        {
+            "text": "Internet",
+            "linkTo": "/internet"
+        },
+        {
+            "text": "Infrastructure",
+            "linkTo": "/infrastructure"
+        },
+        {
+            "text": "Consultations",
+            "linkTo": "/consultation"
+        },
+        {
+            "text": "About Us",
+            "linkTo": "/about"
+        },
     ],
 }
 export const header = {
@@ -34,32 +51,38 @@ export const services = {
         {
             "icon": "/InternetSupplyIcon.png",
             "title": "Speedy Internet Supply",
-            "description": "Delivered over fiber, radio and satellite, our internet supply service is the best you can get!"
+            "description": "Delivered over fiber, radio and satellite, our internet supply service is the best you can get!",
+            linkTo: "/internet"
         },
         {
             "icon": "/InfrastructureIcon.png",
             "title": "Network Infrastructure",
-            "description": "From LANs to Wi-Fi to fiber to transmissions - we plan, design, build and maintain network systems."
+            "description": "From LANs to Wi-Fi to fiber to transmissions - we plan, design, build and maintain network systems.",
+            "linkTo": "/infrastructure"
         },
         {
             "icon": "/SoftwareDevIcon.png",
             "title": "Software Development",
-            "description": "Whether its an enterprise-grade software or a custom-made software product - we’re the best in the biz!"
+            "description": "Whether its an enterprise-grade software or a custom-made software product - we’re the best in the biz!",
+            "linkTo": "/software"
         },
         {
             "icon": "/UnifiedCommsIcon.png",
             "title": "Unified Comm Platforms",
-            "description": "IP phones, mobile signal boosting, equipment sourcing. We make connections easy - as they should!"
+            "description": "IP phones, mobile signal boosting, equipment sourcing. We make connections easy - as they should!",
+            "linkTo": "/ucp"
         },
         {
             "icon": "/AlternateEnergyIcon.png",
             "title": "Alternate Energy",
-            "description": "Solar-powered inverters are fast becoming the new normal! Focus on what matters - get a backup!"
+            "description": "Solar-powered inverters are fast becoming the new normal! Focus on what matters - get a backup!",
+            "linkTo": "/ucp"
         },
         {
             "icon": "/DataCenterIcon.png",
             "title": "Data Centers",
-            "description": "All data centers we build are ISO/IEC 22237 Parts 1 to 7 Compliant. Attention to detail and quality only!"
+            "description": "All data centers we build are ISO/IEC 22237 Parts 1 to 7 Compliant. Attention to detail and quality only!",
+            "linkTo": "/software"
         },
     ]
 }
@@ -74,7 +97,7 @@ export const howWeDeliver = {
     "steps": [
         {
             "id": 1,
-            "content": <span>You <a href="" className="text-blue-600 font-semibold">contact</a> us. We schedule meetings to understand your needs.</span>
+            "content": <span>You <Link to="/contact" className="text-blue-600 font-semibold">contact</Link> us. We schedule meetings to understand your needs.</span>
         },
         {
             "id": 2,

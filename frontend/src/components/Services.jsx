@@ -12,7 +12,7 @@ const Services = () => {
           <h2 className="heading section-title">{sectionTitle}</h2>
           <p>Try out Bento box layout</p>
         </header>
-        <div className="p-2 grid grid-cols-3">
+        <div className="p-2 grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
           {serviceItems.map(serviceCard => <ServiceCard key={serviceCard.title} {...serviceCard} />)}
         </div>
       </section>
