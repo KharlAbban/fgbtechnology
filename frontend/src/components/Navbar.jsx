@@ -29,8 +29,11 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className={`max-lg:px-3 z-10 transition-all duration-100 w-full flex justify-center items-center fixed top-0 py-3 backdrop-blur ${isWhite && 'bg-white/90 shadow-lg'}`}>
-      <div className="container max-w-[1300px] px-2 flex items-center justify-between">
+    <nav className={`z-10 transition-all duration-100 w-screen flex flex-col gap-0 justify-center items-center fixed top-0 backdrop-blur ${isWhite && 'bg-white/90 shadow-lg'}`}>
+      <div className={`w-full py-[2px] flex items-center justify-center bg-white/90 max-md:text-sm max-sm:text-xs ${(pathname == '/careers') && 'hidden'}`}>
+        🎉 We're hiring! See our <Link to="/careers" className='mx-1 font-semibold'> Careers Page </Link> for more information! 🎊
+      </div>
+      <div className="container max-w-[1300px] mx-auto px-2 flex items-center justify-between py-3 max-lg:px-3">
         <img src={isWhite ? logoFullDark : logoFullWhite} alt="FG&B" className='w-36' />
         <label htmlFor="myDrawer" className={`lg:hidden ${isWhite ? '' : 'text-white'} hover:text-gray-500 cursor-pointer duration-75`}>
             <AiOutlineMenu size={30} className='mr-3 text-darkGrayishBlue hover:text-veryDarkBlue duration-75' />
@@ -45,7 +48,7 @@ const Navbar = () => {
               </Link>
           ))}
         </div>
-        <Button bgColor="bg-blue-700" hoverColor="hover:bg-blue-600" shouldGrow={true} classNames="max-lg:hidden" text={<Link to="/contact">Get in touch</Link>} whiteText={true} />
+        <Button bgColor="bg-blue-700" hoverColor="hover:bg-blue-600" shouldGrow={true} classNames={`${pathname === '/contact' && 'opacity-0'} max-lg:hidden`} text={<Link to="/contact">Get in touch</Link>} whiteText={true} />
       </div>
     </nav>
   )

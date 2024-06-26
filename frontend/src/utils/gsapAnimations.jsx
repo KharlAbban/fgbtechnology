@@ -10,7 +10,7 @@ export const animateItemNoScroll = (target, delay, animationOptions) => {
             y: 60,
             opacity: 0,
             duration: 1,
-            ease: 'bounce.out',
+            ease: 'power2.inOut',
             delay: delay,
             ...animationOptions
         })
@@ -23,7 +23,7 @@ export const animateItem = (target, delay, animationOptions, scrollOptions) => {
             y: 60,
             opacity: 0,
             duration: 1,
-            ease: 'bounce.out',
+            ease: 'power1.inOut',
             delay: delay,
             ...animationOptions,
             scrollTrigger: {

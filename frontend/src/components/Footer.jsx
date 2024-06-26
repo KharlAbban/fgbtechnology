@@ -1,4 +1,4 @@
-import { IoCall, IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube, IoPhoneLandscape } from "react-icons/io5";
+import { IoCall, IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube, IoMailOpenOutline, IoPhoneLandscape } from "react-icons/io5";
 import {footer} from "../utils/data"
 
 const Footer = () => {
@@ -14,7 +14,11 @@ const Footer = () => {
           <p className="text-sm text-gray-200 font-normal">{partOne.description}</p>
           <p className="flex gap-2 items-center">
             <IoCall size={20} className="" />
-            <span className="text-green-400">{partOne.phoneNumber}</span>
+            <span className="text-green-300">{partOne.phoneNumber}</span>
+          </p>
+          <p className="flex gap-2 items-center -mt-4">
+            <IoMailOpenOutline size={20} className="" />
+            <span className="text-green-300">{partOne.contactEmail}</span>
           </p>
         </div>
 

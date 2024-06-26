@@ -3,7 +3,7 @@ import { animateItem } from "../utils/gsapAnimations";
 import CTAForm from "./CTAForm";
 
 const AskAQuestionCTA = () => {
-  const {dottedShape, ovalImg, sectionHeading, sectionTitle} = CTAFormInfo;
+  const {sectionHeading, sectionTitle} = CTAFormInfo;
   animateItem(".question-section", null, {stagger: 0.2});
 
   return (
@@ -16,7 +16,7 @@ const AskAQuestionCTA = () => {
         </h1>
         <p className="text-gray-100 my-6">{}</p>
       </div>
-      <CTAForm dottedShape={dottedShape} ovalImg={ovalImg} />
+      <CTAForm />
     </section>
   )
 }

@@ -1,8 +1,11 @@
-import React from 'react'
+import {LocationMap, ContactSection} from "../components"
 
 const ContactUsPage = () => {
   return (
-    <div>ContactUsPage</div>
+    <>
+      <LocationMap />
+      <ContactSection />
+    </>
   )
 }
 

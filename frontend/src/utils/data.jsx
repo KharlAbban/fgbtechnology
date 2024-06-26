@@ -24,6 +24,10 @@ export const navbar = {
             "text": "About Us",
             "linkTo": "/about"
         },
+        {
+            "text": "Contact",
+            "linkTo": "/contact"
+        },
     ],
 }
 export const header = {
@@ -122,7 +126,8 @@ export const footer = {
     "partOne":{
         "logo": "/LogoFullWhite.png",
         "description": "The premier provider of digital telecommunication infrastructure and connectivity in Africa, driving digital transformation and fostering economic growth across the continent.",
-        "phoneNumber": "+233 (0) 55 390 9075"
+        "phoneNumber": "0303940450 / 0553909075",
+        "contactEmail": "sales@fgbtechnology.com"
     },
     "partTwo": [
         {
