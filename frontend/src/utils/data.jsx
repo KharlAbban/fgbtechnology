@@ -9,16 +9,12 @@ export const navbar = {
             "linkTo": "/"
         },
         {
-            "text": "Internet",
-            "linkTo": "/internet"
+            "text": "Products & Services",
+            "linkTo": "/products"
         },
         {
-            "text": "Infrastructure",
-            "linkTo": "/infrastructure"
-        },
-        {
-            "text": "Consultations",
-            "linkTo": "/consultation"
+            "text": "Consultancy",
+            "linkTo": "/consultancy"
         },
         {
             "text": "About Us",
@@ -72,9 +68,9 @@ export const services = {
         },
         {
             "icon": "/UnifiedCommsIcon.png",
-            "title": "Unified Comm Platforms",
-            "description": "IP phones, mobile signal boosting, equipment sourcing. We make connections easy - as they should!",
-            "linkTo": "/ucp"
+            "title": "Consultancy Services",
+            "description": "Tailored digital solutions and industry expertise to optimize and drive sustainable growth.",
+            "linkTo": "/consultancy"
         },
         {
             "icon": "/AlternateEnergyIcon.png",
@@ -84,9 +80,9 @@ export const services = {
         },
         {
             "icon": "/DataCenterIcon.png",
-            "title": "Data Centers",
-            "description": "All data centers we build are ISO/IEC 22237 Parts 1 to 7 Compliant. Attention to detail and quality only!",
-            "linkTo": "/software"
+            "title": "IT Research",
+            "description": "In-depth analysis and insights on emerging technologies, enabling informed decision-making.",
+            "linkTo": "/products"
         },
     ]
 }
@@ -139,15 +135,23 @@ export const footer = {
                 },
                 {
                     "id": 2,
-                    "content": "Infrastructure"
+                    "content": "Infrastructure Building"
                 },
                 {
                     "id": 3,
-                    "content": "Software"
+                    "content": "Software Solutions"
                 },
                 {
                     "id": 4,
-                    "content": "Unified Comms"
+                    "content": "Consultancy"
+                },
+                {
+                    "id": 10,
+                    "content": "IT Research"
+                },
+                {
+                    "id": 11,
+                    "content": "ALternate Energy"
                 },
             ]
         },
@@ -165,7 +169,7 @@ export const footer = {
                 {
                     "id": 7,
                     "content": "Privacy Policy"
-                }
+                },
             ]
         },
         {

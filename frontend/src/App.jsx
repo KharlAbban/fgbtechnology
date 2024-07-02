@@ -1,5 +1,5 @@
 import {RouterProvider, createBrowserRouter} from "react-router-dom"
-import { AboutUsPage, CareersPage, ConsultationsPage, ContactUsPage, ErrorPage, HomePage, InfrastructurePage, InternetPage, LayoutPage, SoftwarePage, UCPPage } from "./pages";
+import { AboutUsPage, CareersPage, ConsultationsPage, ContactUsPage, ErrorPage, HomePage, InternetPage, LayoutPage } from "./pages";
 import { homePageAction } from "./utils/formActions";
 
 const fgbRouter = createBrowserRouter([
@@ -23,24 +23,12 @@ const fgbRouter = createBrowserRouter([
         element: <ContactUsPage />
       },
       {
-        path: "/internet",
+        path: "/products",
         element: <InternetPage />
       },
       {
-        path: "/infrastructure",
-        element: <InfrastructurePage />
-      },
-      {
-        path: "/consultation",
+        path: "/consultancy",
         element: <ConsultationsPage />
-      },
-      {
-        path: "/software",
-        element: <SoftwarePage />
-      },
-      {
-        path: "/ucp",
-        element: <UCPPage />
       },
       {
         path: "/careers",

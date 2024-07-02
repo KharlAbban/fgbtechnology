@@ -1,13 +1,14 @@
-import { useRef } from "react"
-import {MapContainer} from "react-leaflet/MapContainer"
-import "leaflet/dist/leaflet.css"
-import { TileLayer } from "leaflet";
+import {Map, APIProvider} from "@vis.gl/react-google-maps"
 
 const LocationMap = () => {
-  const mapRef = useRef();
+  const apiKey = import.meta.env.VITE_GGOGLE_MAPS_API_KEY;
+  console.log(apiKey);
 
   return (
-    <MapContainer ref={mapRef} zoom={12} center={[0,0]} className="w-screen mt-20 h-56"></MapContainer>
+    <APIProvider apiKey={apiKey}>
+      <Map className="w-screen h-60 mt-20 pointer-events-none" disableDefaultUI={true} defaultCenter={{lat: 5.6033309, lng: -0.1776408}} defaultZoom={13}>
+      </Map>
+    </APIProvider>    
   )
 }
 

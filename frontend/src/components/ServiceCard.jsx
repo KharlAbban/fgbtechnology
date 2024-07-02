@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const ServiceCard = ({icon, title, description, linkTo}) => {
   return (
-    <Link to={linkTo} className='py-3'>
+    <Link to={linkTo} className='p-3'>
         <div className="service-card">
             <img src={icon} alt={title} className='h-20' />
             <h3 className='font-semibold text-2xl'>{title}</h3>

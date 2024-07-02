@@ -45,7 +45,7 @@ body {
         @apply text-5xl mt-2 font-semibold mb-6 max-lg:text-3xl
     }
     .service-card {
-        @apply shadow rounded flex justify-center px-4 gap-2 bg-white border-none outline-none h-80 w-[25rem] items-start flex-col
+        @apply shadow rounded flex justify-center px-4 h-72 gap-2 bg-white border-none outline-none items-start flex-col
     }
     .paragraph {
         @apply max-lg:text-sm
