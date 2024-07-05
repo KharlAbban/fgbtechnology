@@ -6,7 +6,7 @@ export async function homePageAction ({request}) {
     
 
     try {
-        const response = await axios.post("https://fgbtechnology-api.vercel.app/", emailContents);
+        const response = await axios.post("https://fgbtechnology-api.vercel.app/email", emailContents);
 
         console.log(response.data);
         alert("Email sent successfully");
