@@ -20,7 +20,8 @@ const fgbRouter = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ContactUsPage />
+        element: <ContactUsPage />,
+        action: homePageAction
       },
       {
         path: "/products",

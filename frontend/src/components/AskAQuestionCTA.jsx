@@ -16,7 +16,12 @@ const AskAQuestionCTA = () => {
         </h1>
         <p className="text-gray-100 my-6">{}</p>
       </div>
-      <CTAForm />
+      <div className='flex flex-col items-center gap-8 max-lg:w-screen max-lg:px-4'>
+      <h2 className="text-white lg:hidden heading text-3xl underline">Say Something</h2>
+      <div className='w-full px-6 py-12 max-lg:py-8 rounded-sm askForm lg:bg-white'>
+        <CTAForm />
+      </div>
+    </div>
     </section>
   )
 }

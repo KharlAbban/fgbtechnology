@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production') require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
+const sendEmail = require("./controllers/emailController");
 
 const app = express();
 
@@ -16,8 +17,11 @@ app.listen(PORT, (req, res) => {
     console.log(`Server running on port ${PORT}!`);
 })
 
-app.get("/", (req, res) => {
-    res.json({
-        msg: "Working!"
+//Handle email sending and response
+app.post("/email", sendEmail);
+
+app.get("*", (req, res) => {
+    res.status(404).json({
+        msg: "Route does not exist!"
     })
 })
