@@ -17,6 +17,12 @@ app.listen(PORT, (req, res) => {
     console.log(`Server running on port ${PORT}!`);
 })
 
+app.get("/", (req, res) => {
+    res.json({
+        message: "Welcome"
+    })
+})
+
 //Handle email sending and response
 app.post("/email", sendEmail);
 
