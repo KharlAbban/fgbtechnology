@@ -15,6 +15,12 @@ body {
     width: 100%;
     overflow-y: auto;
 }
+.miscPageHeader {
+    background: url("/headerBgImg.png") no-repeat center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+}
 
 @layer utilities {
     .heading {
@@ -43,6 +49,9 @@ body {
     }
     .section-title {
         @apply text-5xl mt-2 font-semibold mb-6 max-lg:text-3xl
+    }
+    .section-title-sm {
+        @apply text-3xl mt-2 font-semibold mb-6 max-lg:text-2xl
     }
     .service-card {
         @apply shadow rounded flex justify-center px-4 h-72 gap-2 bg-white border-none outline-none items-start flex-col
@@ -73,13 +82,14 @@ body {
         @apply -bottom-20 -right-20
     }
     .footer {
-        @apply bg-secondaryBlue w-full
+        /* @apply bg-secondaryBlue w-full */
+        @apply bg-[#14539a] w-full
     }
     .footer-section {
         @apply max-w-[1300px] mx-auto py-6 px-1 mb-4 mt-10
     }
     .footer-title {
-        @apply text-lg mb-6 text-primaryBlack
+        @apply text-lg mb-6 text-black
     }
     .footerImage {
         @apply absolute

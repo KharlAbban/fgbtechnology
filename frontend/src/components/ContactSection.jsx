@@ -29,7 +29,8 @@ const ContactSection = () => {
       </div>
       <div className='mx-auto w-3/4'>
       <div className='px-8 py-12 max-lg:py-8 bg-white rounded-sm relative askForm'>
-        <h2 className="text-center mb-6 heading text-3xl underline">Send A Message</h2>
+        <h2 className="text-center heading text-3xl underline">Send A Message</h2>
+        <p className="w-full text-center mt-1 mb-5">Talk to us about your next idea</p>
         <CTAForm />
       </div></div>
     </section>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { navbar } from '../utils/data'
 import Button from './Button';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -40,12 +40,12 @@ const Navbar = () => {
         </label>
         <div className={`flex max-lg:hidden text-sm gap-4 items-baseline ${isWhite ? 'text-primaryBlack/70' : 'text-gray-400'}`}>
           {menuItems.map((menuItem, index) => (
-            <Link to={menuItem.linkTo} key={index}
+            <NavLink to={menuItem.linkTo} key={index}
               className={
-                index == 0 ? `${isWhite ? 'text-primaryBlack' : 'text-gray-100'} text-base`:`${isWhite ? 'hover:text-gray-900' : 'hover:text-gray-100'} duration-75 cursor-pointer`
+                ({isActive}) => isActive ? `${isWhite ? 'text-primaryBlack' : 'text-gray-100'} text-base`:`${isWhite ? 'hover:text-gray-900' : 'hover:text-gray-100'} duration-75 cursor-pointer`
               }>
                 {menuItem.text}
-              </Link>
+              </NavLink>
           ))}
         </div>
         <Button bgColor="bg-blue-700" hoverColor="hover:bg-blue-600" shouldGrow={true} classNames={`${pathname === '/contact' && 'opacity-0'} max-lg:hidden`} text={<Link to="/contact">Get in touch</Link>} whiteText={true} />

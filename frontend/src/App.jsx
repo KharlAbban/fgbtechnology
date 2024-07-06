@@ -1,5 +1,5 @@
 import {RouterProvider, createBrowserRouter} from "react-router-dom"
-import { AboutUsPage, CareersPage, ConsultationsPage, ContactUsPage, ErrorPage, HomePage, InternetPage, LayoutPage } from "./pages";
+import { AboutUsPage, CareersPage, ConsultationsPage, ContactUsPage, ErrorPage, HomePage, InternetPage, LayoutPage, ProductsPage } from "./pages";
 import { homePageAction } from "./utils/formActions";
 
 const fgbRouter = createBrowserRouter([
@@ -25,7 +25,7 @@ const fgbRouter = createBrowserRouter([
       },
       {
         path: "/products",
-        element: <InternetPage />
+        element: <ProductsPage />
       },
       {
         path: "/consultancy",

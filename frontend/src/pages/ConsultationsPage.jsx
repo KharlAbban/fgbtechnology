@@ -1,8 +1,9 @@
 import React from 'react'
+import { MiscPageHeader } from '../components'
 
 const ConsultationsPage = () => {
   return (
-    <div>ConsultationsPage</div>
+    <MiscPageHeader pageTitle="Consultancy Services" subTitle="Professional insight that drives profitable businesses" />
   )
 }
 
