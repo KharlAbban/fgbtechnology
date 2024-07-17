@@ -1,9 +1,12 @@
 import React from 'react'
-import { MiscPageHeader } from '../components'
+import { MiscPageHeader, ProductsSection } from '../components'
 
 const ProductsPage = () => {
   return (
-    <MiscPageHeader pageTitle="Products & Services" subTitle="View our wide array of offers tailored to your specific needs" />
+    <>
+      <MiscPageHeader pageTitle="Products & Services" subTitle="View our wide array of offers tailored to your specific needs" />
+      <ProductsSection />
+    </>
   )
 }
 

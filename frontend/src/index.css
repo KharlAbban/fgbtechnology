@@ -21,6 +21,48 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: multiply;
 }
+.servCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.servCons {
+    background: url("/servCons.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servSoft {
+    background: url("/servSoft.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servInfra {
+    background: url("/servInfra.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servUCP {
+    background: url("/servUCP.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servEner {
+    background: url("/servEner.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servInternet {
+    background: url("/servInternet.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servIT {
+    background: url("/servIT.jpg") no-repeat center center;
+    background-size: cover;
+}
+.servData {
+    background: url("/servData.jpg") no-repeat center center;
+    background-size: cover;
+}
 
 @layer utilities {
     .heading {
