@@ -1,16 +1,15 @@
-import {jobInfo} from "../utils/jobData"
 import { IoLocationOutline } from "react-icons/io5";
 import { BsClock } from "react-icons/bs";
 import Button from "./Button";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { useState } from "react";
 
-const JobCard = () => {
+const JobCard = ({jobInfo}) => {
   const {description,jobType, location, qualifications, remuneration, responsibilities, title} = jobInfo;
   const [openDetails, setOpenDetails] = useState(false);
   
   return (
-    <div className='border border-primaryBlue rounded-sm p-5 shadow'>
+    <div className='border border-primaryBlue rounded-sm p-5 shadow mb-6'>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <div className="flex justify-between max-lg:flex-col">
         <div>
@@ -20,13 +19,14 @@ const JobCard = () => {
               <BsClock size={20} className="max-md:hidden" />
               {jobType}
             </span>
-            {location.map(location => (
+            {location?.map(location => (
               <span key={location} className="hover:bg-secondaryBlue hover:text-white duration-100 cursor-pointer text-gray-600 text-sm max-md:text-xs py-2 px-4 rounded-full border border-secondaryBlue flex items-center gap-1">
                 <IoLocationOutline size={21} className="max-md:hidden" />
                 {location}
               </span>
             ))}
           </div>
+          <p>Remuneration: <span className="underline font-semibold">{remuneration}</span></p>
           <span onClick={() => setOpenDetails(!openDetails)} className="cursor-pointer text-sm hover:underline mb-2">Job details</span>
         </div>
         <Button text="Apply Now" onClick={() => document.querySelector("#careerModal").showModal()} iconRight={<MdOutlineArrowOutward size={21} />} bgColor="bg-blue-500" hoverColor="hover:bg-blue-600 hover:text-white" classNames="h-12 w-44" />

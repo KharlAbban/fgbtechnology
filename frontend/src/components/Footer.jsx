@@ -1,5 +1,6 @@
 import { IoCall, IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter, IoLogoYoutube, IoMailOpenOutline, IoPhoneLandscape } from "react-icons/io5";
 import {footer} from "../utils/data"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const {partOne, partTwo, partThree, footerBigImage, footerSmallImage} = footer;
@@ -27,7 +28,7 @@ const Footer = () => {
             <div key={subPart.title}>
               <h4 className="footer-title">{subPart.title}</h4>
               {subPart.links.map((link, index) => (
-                <p key={link.id} className={`text-white mb-3 hover:text-gray-400 cursor-pointer duration-75 transition-all ${index == 0 && 'mt-3'}`}>{link.content}</p>
+                <Link to={link.linkTo} key={link.id} className={`text-white mb-3 hover:text-gray-400 cursor-pointer duration-75 transition-all block ${index == 0 && 'mt-3'}`}>{link.content}</Link>
               ))}
             </div>
           ))}

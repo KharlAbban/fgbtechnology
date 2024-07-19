@@ -1,4 +1,4 @@
-import React from 'react'
+import {jobInfo} from "../utils/jobData"
 import { CareerModal, JobCard } from '.'
 
 const JobOpenings = () => {
@@ -7,16 +7,18 @@ const JobOpenings = () => {
         <header>
             <h4 className="heading section-title">Available Offers</h4>
             <div className="flex gap-1 flex-wrap">
-              <span className='px-5 text-sm cursor-pointer md:mr-4 py-2 rounded-full bg-primaryBlue text-white'>Sales (1)</span>
+              <span className='px-5 text-sm cursor-pointer md:mr-4 py-2 rounded-full bg-primaryBlue text-white'>All (2)</span>
+              <span className='px-5 text-sm cursor-not-allowed md:mr-4 py-2 rounded-full bg-gray-300 text-primaryBlue'>Sales (1)</span>
               <span className='px-5 text-sm cursor-not-allowed md:mr-4 py-2 rounded-full bg-gray-300 text-primaryBlue'>Finance (0)</span>
               <span className='px-5 text-sm cursor-not-allowed md:mr-4 py-2 rounded-full bg-gray-300 text-primaryBlue'>Development (0)</span>
-              <span className='px-5 text-sm cursor-not-allowed py-2 md:mr-4 rounded-full bg-gray-300 text-primaryBlue'>NOC (0)</span>
+              <span className='px-5 text-sm cursor-not-allowed py-2 md:mr-4 rounded-full bg-gray-300 text-primaryBlue'>NOC (1)</span>
               <span className='px-5 text-sm cursor-not-allowed py-2 md:mr-4 rounded-full bg-gray-300 text-primaryBlue'>R & D (0)</span>
-              <span className='px-5 text-sm cursor-not-allowed py-2 md:mr-4 rounded-full bg-gray-300 text-primaryBlue'>Planning (0)</span>
             </div>
         </header>
         <div className="my-1 py-6 lg:pl-1 pr-2 mb-12 w-full relative">
-            <JobCard />
+          {jobInfo.map(jobObject => {
+            return <JobCard jobInfo={jobObject} />
+          })}
         </div>
         <CareerModal />
     </section>

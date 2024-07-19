@@ -131,26 +131,32 @@ export const footer = {
             "links": [
                 {
                     "id": 1,
+                    "linkTo": "/products",
                     "content": "Internet Supply"
                 },
                 {
                     "id": 2,
+                    "linkTo": "/products",
                     "content": "Infrastructure Building"
                 },
                 {
                     "id": 3,
+                    "linkTo": "/products",
                     "content": "Software Solutions"
                 },
                 {
                     "id": 4,
+                    "linkTo": "/products",
                     "content": "Consultancy"
                 },
                 {
                     "id": 10,
+                    "linkTo": "/products",
                     "content": "IT Research"
                 },
                 {
                     "id": 11,
+                    "linkTo": "/products",
                     "content": "ALternate Energy"
                 },
             ]
@@ -160,14 +166,17 @@ export const footer = {
             "links": [
                 {
                     "id": 5,
+                    "linkTo": "/about",
                     "content": "About FG&B"
                 },
                 {
                     "id": 6,
+                    "linkTo": "/contact",
                     "content": "Contact & Support"
                 },
                 {
                     "id": 7,
+                    "linkTo": "/",
                     "content": "Privacy Policy"
                 },
             ]
@@ -177,15 +186,18 @@ export const footer = {
             "links": [
                 {
                     "id": 8,
+                    "linkTo": "/contact",
                     "content": "Premium Support"
                 },
                 {
                     "id": 9,
+                    "linkTo": "/products",
                     "content": "Our Services"
                 },
                 {
                     "id": 10,
-                    "content": "Know Our Team"
+                    "linkTo": "/careers",
+                    "content": "Join Our Team"
                 },
             ]
         },

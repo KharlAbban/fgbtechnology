@@ -3,7 +3,7 @@ import { MiscPageHeader } from '../components'
 
 const ConsultationsPage = () => {
   return (
-    <MiscPageHeader pageTitle="Consultancy Services" subTitle="Professional insight that drives profitable businesses" />
+    <MiscPageHeader pageTitle="Consultancy Service" subTitle="Professional insight that drives profitable businesses" />
   )
 }
 
